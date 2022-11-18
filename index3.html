@@ -14,7 +14,165 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<div class="mobile-menu">
+
+<body>
+    <div class="overlay"></div>
+<header class="header">
+    <nav class="header__nav">
+        <div class="header__top header__top--mobile">
+            <div class="container">
+                <div class="header__inner">
+                    <button class="header__burger" type="button">
+                        <span></span>
+                        <span class="sr-only">Открыть меню</span>
+                    </button>
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link ink-default" href="#">
+                                <svg class="header__svg" width="32" height="22">
+                                    <use xlink:href="images/sprite.svg#delivery"></use>
+                                </svg>
+                                <span class="header__span">адрес и время доставки</span>
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link ink-default" href="tel:+385011123">
+                                <svg class="header__svg" width="22" height="22">
+                                    <use xlink:href="images/sprite.svg#tel"></use>
+                                </svg>
+                                <span class="header__span">горячая линия 24/7 </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__list  header__list--info">
+                        <li class="header__item">
+                            <a class="header__link ink-default " href="#">
+                                <span class="header__span">доставка</span>
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link ink-default " href="#">
+                                <span class="header__span">о нас</span>
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link ink-default" href="#">
+                                <span class="header__span">новости</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__content">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__logo">
+                        <a class="logo" href="index.html">
+                            <svg class="logo-img" width="200" height="60">
+                                <use xlink:href="images/sprite.svg#logo"></use>
+                            </svg>
+                            <svg class="logo-img logo-img--mobile" width="37" height="40">
+                                <use xlink:href="images/sprite.svg#logo-short"></use>
+                            </svg>
+                            <span class="sr-only">Логотип магазина Фрeшок</span>
+                        </a>
+                    </div>
+                    <div class="catalog" id="catalog-dropdown">
+                        <button class="catalog__btn" type="button">
+                            Каталог продуктов
+                        </button>
+                        <ul class="catalog__dropdown">
+                            <li class="catalog__item">
+                                <a class="catalog__link" href="index2.html">Овощи и фрукты</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a class="catalog__link" href="index2.html">Бакалея</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a class="catalog__link" href="index2.html">Молочные продукты</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a class="catalog__link" href="index2.html">Хлеб</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a class="catalog__link" href="index2.html">Мясо</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a class="catalog__link" href="index2.html">Колбаса</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a class="catalog__link" href="index2.html">Рыба</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a class="catalog__link" href="index2.html">Алкоголь</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a class="catalog__link" href="index2.html">Напитки</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a class="catalog__link" href="index2.html">Торты</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a class="catalog__link" href="index2.html">Мясо</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a class="catalog__link" href="index2.html">Чай,кофе</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="form-search">
+                        <svg class="form-search__svg form-search__svg--mobile" width="20" height="20">
+                            <use xlink:href="images/sprite.svg#search"></use>
+                        </svg>
+                        <input class="form-search__input form-search__input--mobile" type="search" name="search"
+                            id="search" placeholder="Найти в магазине..." required />
+                        <button class="form-search__button  form-search__button--mobile button"
+                            type="submit">поиск</button>
+                    </form>
+                    <ul class="header-actions">
+                        <li class="header-actions__item">
+                            <button class="header-actions__btn header-actions__btn--search" type="button">
+                                <svg class="header-actions__svg header-actions__svg--search" width="32" height="30">
+                                    <use xlink:href="images/sprite.svg#search"></use>
+                                </svg>
+                                <span class="sr-only">Поиск</span>
+                            </button>
+                        </li>
+                        <li class="header-actions__item">
+                            <button class="header-actions__btn header-actions__btn--private" type=" button">
+                                <svg class="header-actions__svg header-actions__svg--private" width="32" height="30">
+                                    <use xlink:href="images/sprite.svg#private"></use>
+                                </svg>
+                                <span class="sr-only">мой кабинет</span>
+                            </button>
+                        </li>
+                        <li class="header-actions__item">
+                            <button class="header-actions__btn" type="button">
+                                <svg class="header-actions__svg header-actions__svg--favourites" width="32" height="30">
+                                    <use xlink:href="images/sprite.svg#heart"></use>
+                                </svg>
+                                <span class=" header-actions__num">12</span>
+                                <span class="sr-only">избранное</span>
+                            </button>
+                        </li>
+                        <li class="header-actions__item">
+                            <button class="header-actions__btn header-actions__btn--cart" type="button">
+                                <svg class="header-actions__svg header-actions__svg--cart" width="32" height="30">
+                                    <use xlink:href="images/sprite.svg#cart-btn"></use>
+                                </svg>
+                                <span class="header-actions__num">12</span>
+                                <span class="sr-only">добавить в корзину</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+    <div class="mobile-menu">
     <div class="mobile-menu__wpapper">
         <div class="mobile-menu__nav">
             <div class="mobile-menu__logo">
@@ -166,7 +324,7 @@
         </div>
     </div>
 </div>
- <div class="header-cart">
+     <div class="header-cart">
      <div class="header-cart__top">
          <div class="header-cart__box">
              <h2 class="header-cart__title">Корзина</h2>
@@ -289,7 +447,7 @@
          <a class="header-cart__link button" href="">Оформить заказ</a>
      </div>
  </div>
-   <div class="mobile-category">
+       <div class="mobile-category">
        <div class="mobile-category__wrapper">
            <span class="sr-only">Фильтр товаров</span>
            <div class="mobile-category__header">
@@ -465,164 +623,6 @@
            </div>
        </div>
    </div>
-
-<body>
-    <div class="overlay"></div>
-<header class="header">
-    <nav class="header__nav">
-        <div class="header__top header__top--mobile">
-            <div class="container">
-                <div class="header__inner">
-                    <button class="header__burger" type="button">
-                        <span></span>
-                        <span class="sr-only">Открыть меню</span>
-                    </button>
-                    <ul class="header__list">
-                        <li class="header__item">
-                            <a class="header__link ink-default" href="#">
-                                <svg class="header__svg" width="32" height="22">
-                                    <use xlink:href="images/sprite.svg#delivery"></use>
-                                </svg>
-                                <span class="header__span">адрес и время доставки</span>
-                            </a>
-                        </li>
-                        <li class="header__item">
-                            <a class="header__link ink-default" href="tel:+385011123">
-                                <svg class="header__svg" width="22" height="22">
-                                    <use xlink:href="images/sprite.svg#tel"></use>
-                                </svg>
-                                <span class="header__span">горячая линия 24/7 </span>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul class="header__list  header__list--info">
-                        <li class="header__item">
-                            <a class="header__link ink-default " href="#">
-                                <span class="header__span">доставка</span>
-                            </a>
-                        </li>
-                        <li class="header__item">
-                            <a class="header__link ink-default " href="#">
-                                <span class="header__span">о нас</span>
-                            </a>
-                        </li>
-                        <li class="header__item">
-                            <a class="header__link ink-default" href="#">
-                                <span class="header__span">новости</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="header__content">
-            <div class="container">
-                <div class="header__wrapper">
-                    <div class="header__logo">
-                        <a class="logo" href="index.html">
-                            <svg class="logo-img" width="200" height="60">
-                                <use xlink:href="images/sprite.svg#logo"></use>
-                            </svg>
-                            <svg class="logo-img logo-img--mobile" width="37" height="40">
-                                <use xlink:href="images/sprite.svg#logo-short"></use>
-                            </svg>
-                            <span class="sr-only">Логотип магазина Фрeшок</span>
-                        </a>
-                    </div>
-                    <div class="catalog" id="catalog-dropdown">
-                        <button class="catalog__btn" type="button">
-                            Каталог продуктов
-                        </button>
-                        <ul class="catalog__dropdown">
-                            <li class="catalog__item">
-                                <a class="catalog__link" href="index2.html">Овощи и фрукты</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="catalog__link" href="index2.html">Бакалея</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="catalog__link" href="index2.html">Молочные продукты</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="catalog__link" href="index2.html">Хлеб</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="catalog__link" href="index2.html">Мясо</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="catalog__link" href="index2.html">Колбаса</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="catalog__link" href="index2.html">Рыба</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="catalog__link" href="index2.html">Алкоголь</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="catalog__link" href="index2.html">Напитки</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="catalog__link" href="index2.html">Торты</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="catalog__link" href="index2.html">Мясо</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="catalog__link" href="index2.html">Чай,кофе</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <form class="form-search">
-                        <svg class="form-search__svg form-search__svg--mobile" width="20" height="20">
-                            <use xlink:href="images/sprite.svg#search"></use>
-                        </svg>
-                        <input class="form-search__input form-search__input--mobile" type="search" name="search"
-                            id="search" placeholder="Найти в магазине..." required />
-                        <button class="form-search__button  form-search__button--mobile button"
-                            type="submit">поиск</button>
-                    </form>
-                    <ul class="header-actions">
-                        <li class="header-actions__item">
-                            <button class="header-actions__btn header-actions__btn--search" type="button">
-                                <svg class="header-actions__svg header-actions__svg--search" width="32" height="30">
-                                    <use xlink:href="images/sprite.svg#search"></use>
-                                </svg>
-                                <span class="sr-only">Поиск</span>
-                            </button>
-                        </li>
-                        <li class="header-actions__item">
-                            <button class="header-actions__btn header-actions__btn--private" type=" button">
-                                <svg class="header-actions__svg header-actions__svg--private" width="32" height="30">
-                                    <use xlink:href="images/sprite.svg#private"></use>
-                                </svg>
-                                <span class="sr-only">мой кабинет</span>
-                            </button>
-                        </li>
-                        <li class="header-actions__item">
-                            <button class="header-actions__btn" type="button">
-                                <svg class="header-actions__svg header-actions__svg--favourites" width="32" height="30">
-                                    <use xlink:href="images/sprite.svg#heart"></use>
-                                </svg>
-                                <span class=" header-actions__num">12</span>
-                                <span class="sr-only">избранное</span>
-                            </button>
-                        </li>
-                        <li class="header-actions__item">
-                            <button class="header-actions__btn header-actions__btn--cart" type="button">
-                                <svg class="header-actions__svg header-actions__svg--cart" width="32" height="30">
-                                    <use xlink:href="images/sprite.svg#cart-btn"></use>
-                                </svg>
-                                <span class="header-actions__num">12</span>
-                                <span class="sr-only">добавить в корзину</span>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-</header>
     <main class="main">
           <div class="breadcrumbs">
       <div class="container">
@@ -1335,8 +1335,6 @@
         <div class="product-suggestions__pagination swiper-pagination"></div>
     </div>
 </section>
-
-
     </main>
     <footer class="footer">
     <div class="container">
@@ -1458,7 +1456,7 @@
         </div>
     </div>
 </footer>
-</body>
-<script src="js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
 
 </html>
+</body>
